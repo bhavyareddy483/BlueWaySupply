@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\pc\Desktop\view\css\style1.css">
+ 	
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <jsp:include page="includes/header.jsp"></jsp:include>
+<form>
+	<div class="container mt-3">
+		<div class="row p-5">
+			<div class="col-sm-12">
+				<h4 class="mb-2 p-0">Shop</h4>
+				<hr class="m-0 p-0" style="background-color: #FD1C05; width: 7%; float:left; ">
+			</div>
+		</div>
+	</div>
+
+	<div class="container">  
+	<button type="button" class="btn btn-primary" style="margin: 20px;">Update</button> 
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+      	<th></th>
+      	<th></th>
+        <th><h5 style="font-style: bold; color:black;" class="p-2">Product</h5></th>
+        <th><h5 style="font-style: bold; color:black;" class="p-2">Price</h5></th>
+        <th><h5 style="font-style: bold; color:black;" class="p-2">Quality</h5></th>
+        <th><h5 style="font-style: bold; color:black;" class="p-2">Total</h5></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><button type="button" class="close p-3" aria-label="Close">
+  				<span aria-hidden="true" style="color:red;">&times;</span>
+				</button></td>
+        <td><img src="Images/bisleri_250ml_mineral_water_bottle.png" height="30%" width="30%" style="margin-left: 30%;"></td>
+        <td><h5 style="font-style: bold; color:#98999b" class="p-1">Product</h5>
+			</td>
+        <td><h5 style="font-style: bold; color:#98999b" class="p-1">Price</h5></td>
+        <td><input class="mt-2 ml-2" style="width: 30%;" type="number" id="myNumber" min="0"></td>
+        <td><h5 style="font-style: bold; color:#98999b" class="p-1">Total</h5></td>
+      </tr>
+      </tbody>
+  </table>
+</div>
+</form>
+<jsp:include page="includes/footer.jsp"></jsp:include>
+</body>
+</html>

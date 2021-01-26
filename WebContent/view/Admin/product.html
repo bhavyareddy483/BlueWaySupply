@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\pc\Desktop\view\css\style1.css">
+ 	
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <jsp:include page="includes/headerlog.jsp"></jsp:include>
+		<div class="container">
+			<h1>Admin Panel</h1>
+	<div class="row" style="margin-left: 20%;">
+	<div class="col-6 m-5 p-5">	
+	<form>
+	<h3>Add Product</h3>
+    <label for="prdid" class="mb-2 mr-sm-2">Product ID</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="prdid">
+    <label for="prdtype" class="mb-2 mr-sm-2">Product Type</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="prdtype" >
+     <label for="prdname" class="mb-2 mr-sm-2">Product Name</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="prdname" >
+     <label for="prdprice" class="mb-2 mr-sm-2">Product price</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="prdprice" >
+     <label for="prdimage" class="mb-2 mr-sm-2">Product image</label>
+    <form action="/action_page.php">
+  <input type="file" name="pic" accept="image/*">
+  <input type="submit">
+</form>
+     <label for="email2" class="mb-2 mr-sm-2">Product Description</label>
+   <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    <div class="form-check mb-2 mr-sm-2">
+    </div>    
+  <button type="button" class="btn btn-primary mb-2">Submit</button>
+  </div>
+</div>
+</div>
+<jsp:include page="includes/footer.jsp"></jsp:include>
+</body>
+</html>
